@@ -6,7 +6,7 @@
  * @FilePath: /llvm_toy/src/ch1/README.md
  * @Description: LLVM tutorial 1. Kaleidoscope: Kaleidoscope Introduction
 -->
-LLVM 教程通过引入 `toy` 这个简单而全面的语言来解释其工作流程。本节将介绍该语言的最小集实现 ———— Lexer 词法分析器。
+LLVM 教程通过引入 `Kaleidoscope` 这个简单而全面的语言来解释其工作流程。本节将介绍该语言的最小集实现 ———— Lexer 词法分析器。
 
 设计好一个语言后，第一件最常用的操作是识别一段文本，这里的首要工作是分析出这段文本中每个 `token` 的含义，这就是 `lexer` 词法分析器的职责。`lexer` 解析到的 token 基本包含一个 token 码和一些元信息 (比如一个数的值)。下面是 token 的码：
 
