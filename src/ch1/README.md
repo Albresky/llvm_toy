@@ -2,7 +2,7 @@
  * @Author: Albresky albre02@outlook.com
  * @Date: 2025-08-16 22:45:26
  * @LastEditors: Albresky albre02@outlook.com
- * @LastEditTime: 2025-08-16 23:08:42
+ * @LastEditTime: 2025-08-18 19:55:21
  * @FilePath: /llvm_toy/src/ch1/README.md
  * @Description: LLVM tutorial 1. Kaleidoscope: Kaleidoscope Introduction
 -->
@@ -86,4 +86,4 @@ if (LastChar == EOF)
 }
 ```
 
-词法分析器的完整代码见 [./lexer.cpp](./lexer.cpp)
+词法分析器的完整代码见 [./lexer.h](./lexer.h)
