@@ -424,9 +424,9 @@ static void InitializeModule() {
 
 static void HandleDefinition() {
     if (auto _def = ParseDefinition()) {
-        fprintf(stderr, "Parsed a function definition.\n");
-        FunctionAST func = std::move(*_def);
-        fprintf(stderr, "Parsed function: %s\n", func.getProto()->getName().c_str());
+        // fprintf(stderr, "Parsed a function definition.\n");
+        // FunctionAST func = std::move(*_def);
+        // fprintf(stderr, "Parsed function: %s\n", func.getProto()->getName().c_str());
         if (auto *FnIR = _def->codegen()) {
             fprintf(stderr, "Read function definition:");
             FnIR->print(errs());
@@ -508,6 +508,8 @@ int main() {
     // Prime the first token.
     fprintf(stderr, "ready> ");
     getNextToken();
+
+    InitializeModule();
 
     // Run the main "interpreter loop" now.
     MainLoop();
